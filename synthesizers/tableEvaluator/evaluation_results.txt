@@ -1,0 +1,94 @@
+Overview Results:
+  Basic statistics:
+    result: 0.7766906032705477
+  Correlation column correlations:
+    result: 0.41181551514000003
+  Mean Correlation between fake and real columns:
+    result: 0.6247662902837824
+  1 - MAPE Estimator results:
+    result: -0.09215486308216003
+  Similarity Score:
+    result: 0.4302793864030426
+
+Classifier F1-scores and their Jaccard similarities::
+  DecisionTreeClassifier_fake:
+    f1_real: 0.14
+    f1_fake: 0.895
+    jaccard_similarity: 0.049868766404199474
+  DecisionTreeClassifier_real:
+    f1_real: 0.785
+    f1_fake: 0.195
+    jaccard_similarity: 0.10497237569060773
+  LogisticRegression_fake:
+    f1_real: 0.88
+    f1_fake: 0.91
+    jaccard_similarity: 0.8518518518518519
+  LogisticRegression_real:
+    f1_real: 0.81
+    f1_fake: 0.195
+    jaccard_similarity: 0.028277634961439587
+  MLPClassifier_fake:
+    f1_real: 0.875
+    f1_fake: 0.92
+    jaccard_similarity: 0.762114537444934
+  MLPClassifier_real:
+    f1_real: 0.77
+    f1_fake: 0.33
+    jaccard_similarity: 0.0582010582010582
+  RandomForestClassifier_fake:
+    f1_real: 0.635
+    f1_fake: 0.9
+    jaccard_similarity: 0.44404332129963897
+  RandomForestClassifier_real:
+    f1_real: 0.81
+    f1_fake: 0.195
+    jaccard_similarity: 0.049868766404199474
+
+Privacy Results:
+  Duplicate rows between sets (real/fake):
+    result: (2, 0)
+  nearest neighbor mean:
+    result: 1.8060604857233729
+  nearest neighbor std:
+    result: 1.4118182511686725
+
+Jensen-Shannon distance:
+  TOTAL_CHARGES:
+    js_distance: nan
+  TOTAL_NON_COV_CHARGES:
+    js_distance: nan
+  TOTAL_CHARGES_ACCOMM:
+    js_distance: nan
+  TOTAL_NON_COV_CHARGES_ACCOMM:
+    js_distance: nan
+  TOTAL_CHARGES_ANCIL:
+    js_distance: nan
+  RISK_MORTALITY:
+    js_distance: 0.05272847111360607
+
+Kolmogorov-Smirnov statistic:
+  TOTAL_CHARGES:
+    statistic: 1.0
+    p-value: 0.0
+    equality: different
+  TOTAL_NON_COV_CHARGES:
+    statistic: 1.0
+    p-value: 0.0
+    equality: different
+  TOTAL_CHARGES_ACCOMM:
+    statistic: 1.0
+    p-value: 0.0
+    equality: different
+  TOTAL_NON_COV_CHARGES_ACCOMM:
+    statistic: 1.0
+    p-value: 0.0
+    equality: different
+  TOTAL_CHARGES_ANCIL:
+    statistic: 1.0
+    p-value: 0.0
+    equality: different
+  RISK_MORTALITY:
+    statistic: 0.054
+    p-value: 0.1082872208757189
+    equality: identical
+
